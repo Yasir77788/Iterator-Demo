@@ -21,12 +21,15 @@ public class IteratorDemo
            {
                  System.out.printf("%s\n", x);
            };
+        
        // get the iterator to the list
        Iterator<String> iter = nameList.iterator();
+        
        while(iter.hasNext())
        {
            String name = iter.next();
            System.out.printf("%s and length is %d\n", name, name.length());
+           
            if (name.equals("David"))
            {
                // Act differently for names after David
